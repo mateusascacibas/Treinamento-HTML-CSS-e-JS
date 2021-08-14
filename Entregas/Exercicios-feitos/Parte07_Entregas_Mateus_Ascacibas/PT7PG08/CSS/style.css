@@ -1,0 +1,22 @@
+#area
+{
+  position:relative;
+  left:37%;
+  top:29%;
+  width:350px;
+  height:380px;
+}
+
+body{
+    background-color:#3EB6D4;
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;
+}
+fieldset
+{
+  width:300px;
+  height:280px;
+}

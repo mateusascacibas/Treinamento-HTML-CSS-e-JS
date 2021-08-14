@@ -1,0 +1,12 @@
+body {
+    background-color: linen;
+ }
+ h1 {
+    color: maroon;
+    margin-left: 40px;
+ }
+ p{
+     color: red;
+     font-family: Arial;
+     font-size: smaller;
+ }

@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Validação Requerido</title>
+		<style type="text/css">
+			span 
+			{
+				color : red;
+				font-weight : bold;
+			}
+		</style>
+		<script type="text/javascript">
+			function validaRequerido(){
+				var ok = true;
+				
+				// validando campo id
+				var valorId = document.getElementById("campoId").value;
+				if(valorId == null || valorId == "")
+				{
+					document.getElementById("spanId").innerHTML = "*";
+					ok = false;
+				}
+				
+				// validando campo descricao
+				var valorDescricao = document.getElementById("campoDescricao").value;
+				if(valorDescricao == null || valorDescricao == "")
+				{
+					document.getElementById("spanDescricao").innerHTML = "*";
+					ok = false;
+				}
+				
+				// validando campo valor
+				var valorValor = document.getElementById("campoValor").value;
+				if(valorValor == null || valorValor == "")
+				{
+					document.getElementById("spanValor").innerHTML = "*";
+					ok = false;
+				}
+				
+				if(ok)
+				{
+					limparSpan();
+				}
+				else
+				{
+				   document.getElementById("spanMensagem").innerHTML = "Campos com * são Obrigatórios.";
+				}
+				
+				return ok;
+			}
+			
+			function limparSpan(){
+				document.getElementById("spanId").innerHTML = "";
+				document.getElementById("spanDescricao").innerHTML = "";
+				document.getElementById("spanValor").innerHTML = "";
+				document.getElementById("spanMensagem").innerHTML = "";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Formulário</h1>
+		<form>
+			<table>
+				<tr>
+					<td>Código</td>
+					<td><input type="text" id="campoId"></td>
+					<td><span id="spanId"><span/></td>
+				</tr>
+				<tr>
+					<td>Descrição</td>
+					<td><input type="text" id="campoDescricao"></td>
+					<td><span id="spanDescricao"><span/></td>
+				</tr>
+				<tr>
+					<td>Valor</td>
+					<td><input type="text" id="campoValor"></td>
+					<td><span id="spanValor"><span/></td>
+				</tr>
+			</table>
+			<input type="submit" 
+			       value="Enviar" 
+				   onclick="return validaRequerido()">
+			<input type="reset" 
+			       value="Limpar"
+				   onclick="limparSpan()">
+		</form>
+		<div><span id="spanMensagem"></span></div>
+	</body>
+</html>

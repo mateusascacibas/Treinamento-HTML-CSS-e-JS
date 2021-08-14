@@ -1,0 +1,21 @@
+.superior{
+    text-align:center;
+    font-size: 30px;
+    background-color: #753ED4;
+}
+
+h1{
+    background-color: #753ED4;
+}
+
+body{
+    background-color: #3EB6D4;
+}
+
+#fotos{
+    align-items: center;
+}
+
+img{
+    margin-left:120px;
+}

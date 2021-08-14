@@ -1,0 +1,3 @@
+fracamente tipada - não precisa dizer o tipo de dado que a variavel ira armazenar.
+
+linguagem resiliente, funciona sem ";" na parte das VAR por exemplo.

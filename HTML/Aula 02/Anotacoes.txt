@@ -1,0 +1,33 @@
+Docytpe - Não falha caso não use.
+
+./ - Atual
+../ - Anterior
+
+tag "a" = Ancora
+
+Target = Onde abre o link 
+
+LINK : É usado para defini cores para o links não visitados ainda, a cor padrão é o azul.
+
+VLINK : Este define as cores para os links já visitados, ou seja, aqueles que você já deu um click neles, a cor padrão do vlink é o vermelho púrpura.
+
+ALINK : Bom este define as cores dos links selecionados, melhor dizendo quando o usuário pressionou o botão do mouse e ainda não soltou sua cor padrão é o vermelho.
+
+Name = Pontos pra ir (Marcador) - navegação na própria página
+
+Pixel - PIcture ELement
+
+cada pixel precisa de 3 Bytes, 1 pra Red, 1 pra Green e 1 Pra Blue
+
+BMP - Bit Map - Pixel por Pixel
+Resto - Compactado
+
+resposta, Em relação a dimensão, Width e Height.. Já em relação ao tamanho da imagem por pixel, terá que ser escolhi uma extensão que compacte
+
+Bullet = circle, square
+
+Cellpadding - Preenchimento das Células (Em Torno)
+
+thead, tbody e tfoot
+
+Cabeçalho e rodapé são usados igual em todas páginas do projeto

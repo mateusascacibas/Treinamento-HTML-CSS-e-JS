@@ -1,0 +1,15 @@
+Ideia do formulario é receber e pegar dados
+
+Input - Por pra Dentro
+Type - Tipo de Entrada
+
+URI (URL + URN)
+
+Cliente - Request
+Servidor - Response
+
+Request - 
+GET (Recuperar informações do servidor), os dados do FORM vão na URL (Inclusive a senha )
+POST (Enviar dados para o servidor), transfere pelo corpo, ou seja, não é na URL (Logo usuario não vai saber e nem ver os dados enviados)
+
+Hidden - Campo escondido

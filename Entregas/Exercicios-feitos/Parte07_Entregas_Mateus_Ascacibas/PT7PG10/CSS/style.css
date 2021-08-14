@@ -1,0 +1,16 @@
+body{
+    background: #ccc;
+}
+
+.categoria h2{
+    text-align: center;
+}
+
+.categoria p{
+    margin-left: 400px;
+}
+
+.categoria img{
+    float: right;
+    width: 100px;
+}

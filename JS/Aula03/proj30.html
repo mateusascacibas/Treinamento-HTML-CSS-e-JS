@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Validação Requerido</title>
+		<style type="text/css">
+		</style>
+		<script type="text/javascript">
+			function validaEmail(){
+				var ok = true;
+				
+				var email = document.getElementById("campoEmail").value;
+				
+				// e-mail foi preenchido
+				if(ok){				
+					if(email == null || email == ""){
+						document.getElementById("spanMensagem").innerHTML = "Preencher nosso e-mail";
+						ok = false;
+					}
+				}
+
+				// tem que ter @
+				if(ok){
+					var posAt = email.indexOf("@");
+					if(posAt == -1 ){
+						document.getElementById("spanMensagem").innerHTML = "e-mail deve ter @";
+						ok = false;
+					}
+				}
+				
+				// só pode haver 1 @
+				if(ok){
+					var posAt = email.indexOf("@");
+					var posUltimoAt = email.lastIndexOf("@");
+					if(posAt != posUltimoAt){
+						document.getElementById("spanMensagem").innerHTML = "Só pode haver 1 @";
+						ok = false;
+					}
+				}
+				
+				// não pode começar ou terminar com @
+				if(ok){
+					var posAt = email.indexOf("@");
+					if(posAt == 0 || posAt == email.length - 1){
+						document.getElementById("spanMensagem").innerHTML = "não pode começar ou terminar com @";
+						ok = false;
+					}
+				}
+				
+				// deve haver no mínimo 1 ponto
+				if(ok){
+					var dotPos = email.indexOf(".");
+					if(dotPos == -1 ){
+						document.getElementById("spanMensagem").innerHTML = "deve haver no mínimo 1 ponto";
+						ok = false;
+					}
+				}
+				
+				// não pode haver . antes ou após o @
+				if(ok){
+					var posAt = email.indexOf("@");
+					if(email.substr(posAt-1,1)== '.' || 
+					   email.substr(posAt+1,1)== '.'){
+						document.getElementById("spanMensagem").innerHTML = "não pode haver . antes ou após o @";
+						ok = false;
+					}
+				}
+				
+				// deve haver 1 ponto após o @
+				if(ok){
+					var atpos = email.indexOf("@");			
+					var dotpos = email.lastIndexOf(".");
+					if (dotpos<atpos + 2) {
+						document.getElementById("spanMensagem").innerHTML = "deve haver um ponto após o @";
+						ok = false;
+					}
+				}				
+				
+				// deve haver no mínimo 2 caracteres e no máximo 3 caracteres no final do eMail
+				if(ok){
+					var dotpos = email.lastIndexOf(".");
+					var qtd = email.length - dotpos -1
+					if (qtd < 2 || qtd > 3) {
+						document.getElementById("spanMensagem").innerHTML = "após o último . deve haver entre 2 e 3 caracteres";
+						ok = false;
+					}
+				}				
+				
+				// verificando caracteres válidos
+				if(ok){
+					var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+					if (!emailPattern.test(email)) {
+						document.getElementById("spanMensagem").innerHTML = "há caracteres inválidos";
+						ok = false;
+					}
+				}	
+				return ok;				
+			}
+			
+			function limparSpan(){
+				document.getElementById("spanMensagem").innerHTML = "";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Validar e-mail</h1>
+		<form>
+			<table>
+				<tr>
+					<td>nosso e-mail</td>
+					<td><input type="text" id="campoEmail"></td>
+					<td><span id="spanEmail"><span/></td>
+				</tr>
+				<tr>
+					<td>html5 e-mail</td>
+					<td><input type="email"></td>
+				</tr>				
+			</table>
+			<input type="submit" 
+			       value="Enviar" 
+				   onclick="return validaEmail()">
+			<input type="reset" 
+			       value="Limpar"
+				   onclick="limparSpan()">
+		</form>
+		<div><span id="spanMensagem"></span></div>
+	</body>
+</html>

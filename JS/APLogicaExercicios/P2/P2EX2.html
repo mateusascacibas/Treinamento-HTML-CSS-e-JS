@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 57</title>
+    <script>
+        function converta() {
+            let q1, q2, q3, q4, q5, q6;
+            let cotacao_d;
+            let reais;
+
+            q1 = parseFloat(document.getElementById('q1').value);
+            q2 = parseFloat(document.getElementById('q2').value);
+            q3 = parseFloat(document.getElementById('q3').value);
+            q4 = parseFloat(document.getElementById('q4').value);
+            q5 = parseFloat(document.getElementById('q5').value);
+            q6 = parseFloat(document.getElementById('q6').value);
+
+            cotacao_d = parseFloat(document.getElementById('cotacao_d').value);
+
+            reais = (q1 + 0.5 * q2 + 0.25 * q3 + 0.1 * q4 + 0.05 * q5 + 0.01 * q6) * cotacao_d;
+            1 + 0,5 * 1 + 0,25 * 1 * 0.1 * 1 + 0.05 * 1 + 0.01 
+
+            document.getElementById('spanResposta').innerHTML = "O valor em R$ dá: " + reais.toFixed(2);
+
+
+        }
+
+        function limpar() {
+
+            document.getElementById('spanResposta').innerHTML = "";
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" align="center">
+        Cotação Dolar <input type="text" id="cotacao_d"><br><br>
+        Moeda de US$ 1,00<input type="text" id="q1"><br><br>
+        Moeda de US$ 0,50<input type="text" id="q2"><br><br>
+        Moeda de US$ 0,20<input type="text" id="q3"><br><br>
+        Moeda de US$ 0,10<input type="text" id="q4"><br><br>
+        Moeda de US$ 0,05<input type="text" id="q5"><br><br>
+        Moeda de US$ 0,01<input type="text" id="q6"><br><br>
+        <input type="button" value="Enviar" onclick="converta()">
+        <input type="reset" value = "Limpar" onclick="limpar()">
+    </form>
+
+    <span id="spanResposta">
+
+    </span>
+</body>
+
+</html>

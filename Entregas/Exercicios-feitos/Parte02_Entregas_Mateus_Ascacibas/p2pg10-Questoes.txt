@@ -1,0 +1,7 @@
+Algumas imagens do projeto em seu tamanho natural são muito
+grandes, como poderia ser feito para arrumar esse problema?
+
+- HEIGHT e WIDTH  são atributos que definem altura e largura que deseja aplicar na imagem, consequantemente como ela será exposta no mesmo.Ex:
+height="200px";
+width= "50%";
+Outra alternativa é realizar a conversão da imagem utilizando um software específico, por exemplo o photoshop.

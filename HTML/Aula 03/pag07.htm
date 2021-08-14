@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Cadastro de Produto</h2>
+    <form method="GET">
+        <table>
+            <tr>
+                <td>
+                    Data e Hora
+                </td>
+                <td>
+                    <input type="datetime-local" id="campoDatetime" name="campoDatetime" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Data
+                </td>
+                <td>
+                    <input type="date" id="campoDate" name="campodate" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email
+                </td>
+                <td>
+                    <input type="email" id="campoEmail" name="campoEmail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Numero
+                </td>
+                <td>
+                    <input type="number" id="campoNumero" name="campoNumero" min=0 max =100 step =2 value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Range
+                </td>
+                <td>
+                    <input type="range" id="campoRange" name="campoRange" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Usuário
+                </td>
+                <td>
+                    <input type="text" id="campoCodigo" name="campoCodigo" maxlength="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Senha
+                </td>
+                <td>
+                    <input type="password" id="campoSenha" name="campoSenha">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Time
+                </td>
+                <td>
+                    <input type="radio" checked value = "Corinthians" name="campoTime">Corinthians <br>
+                    <input type="radio" value = "Flamengo" name="campoTime">Flamengo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobbie
+                </td>
+                <td>
+                    <input type="checkbox" name="campHobbie" value="Leitura">Leitura <br>
+                    <input type="checkbox" name="campHobbie" value="Musica">Musica <br>
+                    <input type="checkbox" name="campHobbie" value="Artesanato">Artesanato <br>
+                    <input type="checkbox" name="campHobbie"  checked value="Jogos">Jogos <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Observação</td>
+                <td>
+                    <textarea name="campoObservacao" cols="20" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>UF - Options</td>
+                <td>
+                    <select name="ufSudeste">
+                        <option value="SP" selected>SP</option>
+                        <option value="RJ">RJ</option>
+                        <option value="MG">MG</option>
+                        <option value="ES">ES</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="botaoSubmit" value="Salvar">
+                    <input type="reset" name="botaoReset" value="Limpar">
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

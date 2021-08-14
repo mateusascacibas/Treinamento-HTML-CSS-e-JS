@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function Cavalos(){
+            let m = parseFloat(document.getElementById("campoMassa").value);
+            let h = parseFloat(document.getElementById("campoAltura").value);
+            let t = parseFloat(document.getElementById("campoTempo").value);
+            let c = m * h / t / 745.6999;
+
+            if(isNaN(c)){
+                document.getElementById("spanResposta").innerHTML = "Por favor, só digite numeros.";
+     
+            }
+
+            else{
+                document.getElementById("spanResposta").innerHTML = "Serão necessarios " + c.toFixed(2) + " cavalos."; 
+            }
+        }
+
+        function limpar(){
+            document.getElementById("spanResposta").innerHTML = ""; 
+          
+        }
+    </script>
+    <title>Cavalos</title>
+</head>
+<body>
+    <h1>Cavalos</h1>
+    <form action="#" method="post">
+        <table border="1">
+            <tr>
+                <td>Massa</td>
+                <td><input type="text" id="campoMassa"></td>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td><input type="text" id="campoAltura"></td>
+            </tr>
+            <tr>
+                <td>Tempo</td>
+                <td><input type="text" id="campoTempo"></td>
+            </tr>
+            <tr >
+                <td colspan = "2" align="center">
+                    <input type="button" value = "Calcula" onclick="Cavalos()">
+                    <input type="reset" value = "Limpar" onclick="limpar()">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+    <span id ="spanResposta">
+            
+    </span>
+</body>
+</html>

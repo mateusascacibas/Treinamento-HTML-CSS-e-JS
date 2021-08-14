@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    
+    <!-- Border = Borda -->
+    <!-- Cellpadding - Preenchimento das Células (Em Torno) -->
+    <!-- Cellspacing - Preenchimento "fora da tabela" -->
+  
+    <table border ="1" cellpadding = 10 cellspacing = 1 >
+        <caption>Lista de Produtos</caption>
+        <!-- TR = Linha -->
+        <!-- TH = Titulo -->
+        <!-- Caption - Titulo da Tabela -->
+        <!-- TD = Coluna -->
+        <!-- Align - Alinhamento Horizontal do Conteudo dentro da célula -->
+        <!-- VAlign - Alinhamento Vertical -->
+        <!-- Colspan - Se esparrama pelas colunas -->
+        <!-- Rowspan - Se esparrama pelas linhas  -->
+        <tr>
+            <th Colspan="2">Código</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <tr align = "rRight">
+            <td rowspan ="2">001</td>
+            <td>Caderno de Escola</td>
+            <td>30.00</td>
+        </tr>
+        <tr  align = "Left">
+            <td>002</td>
+            <td>Caneta</td>
+            <td>5.00</td>
+        </tr>
+        <tr  align = "Center">
+            <td>003</td>
+            <td>Lapiseira</td>
+            <td>15.00</td>
+        </tr>
+        <tr height = "80px">
+            <td valign = "top">004</td>
+            <td valign = "middle">Borracha Branca</td>
+            <td valign = "bottom">4.00</td>
+        </tr>
+    </table>
+</body>
+</html>

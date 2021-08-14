@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms document</title>
+</head>
+<body>
+    <h1>Formulário de Inscrição - Vaga de Desenvolvedor</h1>
+<form class="cf">
+    <input type="text" id="input-name" placeholder="Nome"><br><br>
+    <input type="email" id="input-email" placeholder="E-mail"><br><br>
+    <label for="estado">Selecione seu Estado:</label>
+<select name="estado" id="estado" form="estadoform">
+    <option>AC</option>
+    <option>AL</option>  
+    <option>AP</option>
+    <option>AM</option>
+    <option>BA</option>
+    <option>CE</option>
+    <option>DF</option>
+    <option>ES</option>
+    <option>GO</option>
+    <option>MA</option>
+    <option>MT</option>
+    <option>MS</option>
+    <option>MG</option>
+    <option>PA</option>
+    <option>PB</option>
+    <option>PR</option>
+    <option>PE</option>
+    <option>PI</option>
+    <option>RJ</option>
+    <option>RN</option>
+    <option>RS</option>
+    <option>RO</option>
+    <option>RR</option>
+    <option>SC</option>
+    <option>SP</option>
+    <option>SE</option>
+    <option>TO</option>
+</select>
+
+<p>Escolha um Time </p> 
+		    <form id= "form" name="form" method="post" action= ""> 	 
+			<input name="time" type="radio" value= "Real" checked>Real Madri <br><br>
+			<input name="time" type="radio" value= "Barcelona" checked>Barcelona <br><br>
+
+            <p>Defina o nível de interesse na vaga:</p>
+            <input type="range"> <br>
+            <p>Inclua o anexo do seu currículo:</p>
+            <input type="search">   
+            <p>Descreva suas características (pontos positivos e negativos):</p>      
+  <div class="half right cf">
+    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+  </div>  
+  <input type="submit" value="Submit" id="input-submit">
+
+</form>
+    
+</body>
+</html>

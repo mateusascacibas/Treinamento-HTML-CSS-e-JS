@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 89</title>
+    <script>
+        function Crescente() {
+            let A,
+                B,
+                C,
+                maior,
+                menor,
+                meio;
+
+            A = parseFloat(document.getElementById('num_1').value);
+            B = parseFloat(document.getElementById('num_2').value);
+            C = parseFloat(document.getElementById('num_3').value);
+            if (A < B) {
+                if (A < C) {
+                    if (B < C) {
+                        menor = A;
+                        meio = B;
+                        maior = C;
+                    }
+                    else {
+                        menor = A;
+                        meio = C;
+                        maior = B;
+                    }
+                }
+                else {
+                    menor = C;
+                    meio = A;
+                    maior = B;
+                }
+            }
+            else {
+                if (B < C) {
+                    if (A < C) {
+                        menor = B;
+                        meio = A;
+                        maior = C;
+                    }
+                    else {
+                        menor = B;
+                        meio = C;
+                        maior = A;
+                    }
+                }
+                else {
+                    menor = C;
+                    meio = B;
+                    maior = A;
+                }
+            }
+
+            document.getElementById('spanResposta').innerHTML = "Em ordem crescente: " + menor + " , " + meio + " , " + maior;
+        }
+        function limpar() {
+            document.getElementById('spanResposta').innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <p>O diagrama de blocos abaixo representa um programa que lê 3 números (variáveis A, B e C) e os exibe em ordem
+        crescente. Faça o pseudocódigo desse algoritmo</p>
+    <form action="#">
+        A: <input type="text" id="num_1"> B: <input type="text" id="num_2"> C: <input type="text" id="num_3">
+        <input type="button" value="Enviar" onclick="Crescente()">
+        <input type="reset" value="Limpar" onclick="limpar()">
+    </form>
+    <span id="spanResposta"></span>
+</body>
+
+</html>

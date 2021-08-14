@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 61</title>
+    <script>
+        function converta_Raio() {
+            let raio;
+            let perimentro;
+            let area;
+
+            raio = parseFloat(document.getElementById('medida_raio').value);
+            perimetro = 2 * 3.14158 * raio;
+            area = 3.14159 * (raio * raio);
+
+            document.getElementById('spanResposta').innerHTML = "Raio: " + raio + "<br> Perimetro: " + perimetro.toFixed(2) + "<br> Area: " + area.toFixed(2);
+
+
+        }
+
+        function limpar() {
+
+            document.getElementById('spanResposta').innerHTML = "";
+
+        }
+    </script>
+</head>
+
+<body>
+    <p>Elabore um programa para ler uma medida de raio em metros, determinar e exibir o perímetro e a área de um círculo
+        com esse raio, através das fórmulas abaixo:</p>
+    <form action="#">
+        Medida do Raio: <input type="text" id="medida_raio" placeholder="Digite a medida: ">
+        <input type="button" value="Enviar" onclick="converta_Raio()">
+        <input type="reset" value = "Limpar" onclick="limpar()">
+    </form>
+
+    <span id="spanResposta">
+
+    </span>
+</body>
+
+</html>

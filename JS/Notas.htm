@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function Pag138() {
+            let contador = 1;
+            let salario_horas = 0;
+            let qtd_horas = 0;
+            let salario_total = 0;
+            let numerario = 0;
+            let resto = 0;
+            do{
+                contador = window.prompt("ID");
+                
+                if(contador != 0){
+                    qtd_horas = window.prompt("QTD HORAS");
+                    salario_horas = window.prompt("SAL HORA");
+                    salario_total = salario_total + (qtd_horas * salario_horas);
+                }
+                
+            }
+            while (contador != 0);
+
+            if (salario_total >= 100) {
+                numerario = Math.floor(salario_total / 100);
+                alert("Notas de 100: " + Math.floor(salario_total / 100));
+                resto = salario_total % 100;
+            }
+            if (resto >= 50) {
+                numerario = numerario + Math.floor(resto / 50);
+                alert("Notas de 50: " + Math.floor(resto / 50));
+                resto = resto % 50;
+            }
+
+            if (resto >= 20) {
+                numerario = numerario + Math.floor(resto / 20);
+                alert("Notas de 20: " + Math.floor(resto / 20));
+                resto = resto % 20;
+            }
+
+            if (resto >= 10) {
+                numerario = numerario + Math.floor(resto / 10);
+                alert("Notas de 10: " + Math.floor(resto / 10));
+                resto = resto % 10;
+            }
+
+            if (resto >= 5) {
+                numerario = numerario + Math.floor(resto / 5);
+                alert("Notas de 5: " + Math.floor(resto / 5));
+                resto = resto % 5;
+            }
+
+            if (resto >= 2) {
+                numerario = numerario + Math.floor(resto / 2);
+                alert("Notas de 2: " + Math.floor(resto / 2));
+                resto = resto % 2;
+            }
+
+            if (resto >= 1) {
+                numerario = numerario + Math.floor(resto / 1);
+                alert("Moedas de 1: " + Math.floor(resto / 1));
+                resto = resto % 1;
+            }
+
+            alert("Para o salario total de " + salario_total + " serao necessarias " + numerario + " notas.");
+        }
+
+    </script>
+</head>
+
+<body onload="Pag138()">
+   
+</body>
+
+</html>

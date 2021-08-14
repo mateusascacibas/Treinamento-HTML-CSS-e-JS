@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>
+			Primeiro formulário
+		</title>
+	</head>
+	<body>
+		<h2>Cadastro de Dados</h2>
+		<form method="get">
+			<table>
+				<tr>
+					<td>data e hora</td>
+					<td><input type="datetime-local" 
+					           id="campoDataHora"/></td>
+				</tr>			
+				<tr>
+					<td>usuário</td>
+					<td><input type="text" 
+					           id="campoCodigo" 
+							   name="campoCodigo"
+							   value="nome"
+							   size="20"
+							   maxlength="20"/></td>
+				</tr>
+				<tr>
+					<td>senha</td>
+					<td><input type="password" 
+					           id="campoSenha" 
+							   name="campoSenha"/></td>
+				</tr>
+				<tr>
+					<td>Time</td>
+					<td>
+					   <input type="radio" name="campoTime" value="São Paulo" checked/>São Paulo <br/>
+					   <input type="radio" name="campoTime" value="Palmeiras"/>Palmeiras <br/>
+					   <input type="radio" name="campoTime" value="Santos"/>Santos <br/>
+					   <input type="radio" name="campoTime" value="Corinthians"/>Corinthians
+					</td>
+				</tr>
+				<tr>
+					<td>Hobby</td>
+					<td>
+					   <input type="checkbox" name="campoHobby" value="Leitura" checked/>Leitura <br/>
+					   <input type="checkbox" name="campoHobby" value="Música"/>Música <br/>
+					   <input type="checkbox" name="campoHobby" value="Artesanato"/>Artesanato <br/>
+					   <input type="checkbox" name="campoHobby" value="Jogos" checked/>Jogos
+					</td>
+				</tr>
+				<tr>
+					<td>Observação</td>
+					<td>
+					   <textarea name="campoObservacao" rows="5" cols="20" maxlength="100"/></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>UF</td>
+					<td>
+					   <select name="ufSudeste">
+						<option value="SP"> SP </option>
+						<option value="RJ"> RJ </option>
+						<option value="MS" selected> MG </option>
+						<option value="ES"> ES </option>
+					   </select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" name="botaoSubmit" value="Salvar">
+						<input type="reset" name="botaoReset" value="Limpar">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

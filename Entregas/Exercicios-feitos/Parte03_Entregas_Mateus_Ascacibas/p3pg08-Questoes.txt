@@ -1,0 +1,9 @@
+1) Eu desejo começar a contagem a partir do numero 5, consigo?
+R: Sim, utilizando a lista ordenada essa contagem pode ser feita! E para começar do numero 5, é apenas necessário que dentro do "OL" coloque o "start" com o numero de inicio desejado, no caso o numero 5.
+Ex: <ol start = "5">
+
+2) Existe alguma maneira de trocar o bullet (circulo cheio) para algum outro?
+R: Sim, utilizando a lista não ordenada o bullet pode ser alterado com o "type", por exemplo: type = "square" (Alterando para quadrado).
+
+3) Existe algum outro tipo de lista?
+R: Sim, além da lista ordenada e da lista não ordenada, existe também a lista de definição. Esta lista serve como um "dicionário", o "DL" define essa lista, logo após o "DT" serve de titulo ou termo principal, logo após vem o "DD" que serve como "significado" do termo principal definido anteriormente, o "DT".

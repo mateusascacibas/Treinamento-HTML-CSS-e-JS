@@ -1,0 +1,41 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+		var x = [10,16,45,3,6,8];
+		
+		for (n in x)
+		{
+			document.write (x[n] + '-');
+		}
+		
+		document.write ('</br>');		
+		
+		for(var i=0; i<x.length ; i++)
+		{
+			document.write (x[i] + '-');
+		}
+		
+		document.write ('</br>');
+		
+		// exemplo com objeto
+		class aluno{
+			id;
+			nome;
+			nota;
+		}
+		
+		var jose = new aluno();
+		jose.id = 12;
+		jose.nome = "jose";
+		jose.nota = 80;
+
+		for(var x in jose){
+			document.write(x + '<br/>');
+		}
+		
+      </script>      
+   </head>
+   
+   <body>
+   </body>
+</html>

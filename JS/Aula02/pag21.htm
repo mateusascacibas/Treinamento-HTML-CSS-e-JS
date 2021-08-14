@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function digaOla(){
+            document.write("Olá!!!");
+            document.write("<br>");
+        }
+
+        function soma(a,b){
+            document.write(a + b);
+            document.write("<br>");
+        }
+
+        function dobra(a){
+            return 2*a
+        }
+
+        function fatorialRecursivo(n){
+            if(n < 2) return 1;
+            return n * fatorialRecursivo(n-1);
+        }
+
+        function fatorialIterativo(n){
+            var f = 1;
+
+            while (n > 1){
+                f = f * n;
+                n = n - 1;
+            }
+            return f;
+        }
+        
+        digaOla();
+        soma(5,10);
+        
+        document.write("<br>");
+        document.write(fatorialRecursivo(5));
+        document.write("<br>");
+        document.write(fatorialIterativo(5));
+    </script>
+    <title>Functions</title>
+</head>
+<body>
+    <p onmouseover="alert(dobra(5))">Dobra</p>
+</body>
+</html>

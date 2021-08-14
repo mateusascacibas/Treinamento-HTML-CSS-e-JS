@@ -1,0 +1,56 @@
+Internet = Redes InterConectadas
+
+Primeira aplicação foi o Email - SMTP(SimpleMailTransferProtocol)
+
+FTP-File Transfer Protocol	
+
+HTTP - Hyper Text Transfer Protocol - Cliente-Servidor
+
+Cliente-Servidor = Request, Response
+
+Cliente (Browser) faz requisição, Servidor envia a resposta.
+
+Protocolo HTTP Pede/Solicita Arquivo no formato texto
+
+Imagem também é sequencia de Bytes
+
+Hyper Media - Quando tem mais que texto (Fotos, videos)
+
+Three Tiers Web - 3 Camadas
+Apresentação - HTML, CSS, JS - Front End
+Aplicação - Regras de negócio - Back End regras
+Database - Back End dados
+
+O Que é HTML?
+ * HTML - Hyper-Text Markup Language - Linguagem de Marcação/Formatação de Hyper Texto
+
+Tabela ASCII - 1 Byte por letra - 8 Bits
+Tabela Unicode - 16 Bits -  Codificação (ex: UTF 8) - Todos os idiomas do mundo
+Charset - Qual codificação está usando?
+Chat - Caracter 
+Set - Conjunto
+
+HTML - Envolve todo o documentos
+HEAD - Cabeçalho
+BODY - Conteudo
+TITLE - Titulo
+
+Case Insensitive (Tanto faz maiusculo ou minusculo)
+
+Upper Case - Caixa Alta
+Lower Case - Caixa Baixa
+Case - Estojo/Caso
+BriefCase - Maleta
+
+Browser Interpreta HTML
+
+As TAGS podem ter propriedades, e as propriedades tem valor (Sempre entre aspas)
+
+Single Quote - '
+Double Quote - "
+
+Aster + Isco - Asterisco
+Aster = Estrela
+Isco = Pequeno
+
+Fazer PAG 9, 10 e 11
